@@ -576,7 +576,7 @@ for ic in range(1,21,1):
     
     #-------------------------------------------------
     
-    Create_Analysis_Step(myString,"Step-1","Initial",0.01,0.01,1E-015,300,ON)
+    Create_Analysis_Step(myString,"Step-1","Initial",0.01,0.01,1E-005,300,ON)
     
     myID_1 = Create_Datum_Plane_by_Principal(XZPLANE,myPart_3,myString,myLength/2.0)
     myID_2 = Create_Datum_Plane_by_Principal(XYPLANE,myPart_3,myString,0.0)
