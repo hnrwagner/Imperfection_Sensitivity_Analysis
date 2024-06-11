@@ -558,7 +558,7 @@ for ic in range(1,21,1):
     a = mdb.models[myString].rootAssembly
     region1=a.instances['Plate'].surfaces['Plate_Surface']
     region2=a.instances['Cone_&_Shim-1'].sets['Set-SBPA-Edge']
-    mdb.models[myString].SurfaceToSurfaceContactStd(name='Int-1', createStepName='Initial', master=region1, slave=region2, sliding=FINITE, thickness=ON, interactionProperty='IntProp-1', adjustMethod=NONE, initialClearance=OMIT, datumAxis=None, clearanceRegion=None)
+    mdb.models[myString].SurfaceToSurfaceContactStd(name='Int-1', createStepName='Initial', main=region1, secondary=region2, sliding=FINITE, thickness=ON, interactionProperty='IntProp-1', adjustMethod=NONE, initialClearance=OMIT, datumAxis=None, clearanceRegion=None)
     
     # Rigid Body Constraint - Tie
     
